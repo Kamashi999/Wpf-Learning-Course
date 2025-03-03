@@ -20,6 +20,8 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
         Product product = new Product("TV");
-        
+        Label2.Content = product.Name;
+        product.SetName("Color Tv");
+        Label1.Content = product.Name;
     }
 }
